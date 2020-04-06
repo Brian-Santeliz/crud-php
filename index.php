@@ -3,7 +3,7 @@
 <?php include('includes/header.php') ?>
 <div class="container">
    <div class="row">
-     <div class="col-md-12">
+     <div class="col-md-12 mt-4">
        <?php if(isset($_SESSION['mensaje'])) {?>
           <div class="alert alert-<?= $_SESSION['mensaje_tipo'];?> alert-dismissible fade show" role="alert">
             <?= $_SESSION['mensaje'] ?>
@@ -36,6 +36,7 @@
             <th>Descripcion</th>
             <th>Fecha</th>
             <th>Accion</th>
+
           </tr>
         </thead>
         <tbody>
